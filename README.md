@@ -8,7 +8,7 @@ This repository contains a series of practical, locally simulated cybersecurity 
 
 Traditional hacking tutorials often focus on outdated network perimeter breaches. This project highlights how the modern attack surface has shifted into the development lifecycle itself, utilizing local Python scripts to simulate advanced vulnerabilities safely.
 
-## ⚠️ Disclaimer
+## Disclaimer
 **Educational Purposes Only.** These scripts are designed to safely demonstrate the logic of critical vulnerabilities within a closed, local environment. Do not deploy these payloads or techniques in unauthorized environments.
 
 ## Prerequisites
@@ -88,7 +88,7 @@ AI models are frequently shared as serialized binary files (like Python's `.pkl`
 
 ### How it Works
 1. `build_poisoned_model.py` overrides the `__reduce__` method to bind a Windows `cmd.exe` payload to the object.
-2. `ai_app.py` simply loads the model into memory. The application doesn't run the model—merely loading it triggers the hidden payload.
+2. `ai_app.py` simply loads the model into memory. The application doesn't run the model. Just loading it triggers the hidden payload.
 
 ### Execution Steps
 1. Navigate to the `lab4` directory.
